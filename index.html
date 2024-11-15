@@ -154,21 +154,33 @@ a <!--No borrar, peta el codigo--><!DOCTYPE html>
       <p class="text-center">Desde el corazón del Medio Oriente, traemos la auténtica experiencia de kebabs a nuestra comunidad. Nuestro restaurante es un lugar de encuentro para los amantes de la buena comida, la cultura y la hospitalidad. ¡Nos encanta servirte!</p>
     </div>
 
-    <!-- Galería -->
-    <div class="container my-5">
-      <h2 class="text-center mb-5">Galería</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="./img/kebab1.webp" class="img-fluid mb-4 gallery-img" alt="Kebab 1">
-        </div>
-        <div class="col-md-4">
-          <img src="./img/kebab2.webp" class="img-fluid mb-4 gallery-img" alt="Kebab 2">
-        </div>
-        <div class="col-md-4">
-          <img src="./img/kebab3.webp" class="img-fluid mb-4 gallery-img" alt="Kebab 3">
-        </div>
-      </div>
+   <!-- Galería (ahora un Carousel) -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/kebab1.webp" class="d-block w-100" alt="...">
     </div>
+    <div class="carousel-item">
+      <img src="img/kebab2.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/kebab3.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
     <!-- Menu and Opinions -->
     <div class="container my-5" id="menu">
