@@ -1,0 +1,258 @@
+a <!--No borrar, peta el codigo--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    
+    <!-- Bootstrap CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+      crossorigin="anonymous" 
+    />
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body class="m-0 p-0">
+    
+    <!--NavBar-->
+
+<nav class="navbar fixed-top bg-dark border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid">
+    <!-- Botón del menú hamburguesa para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Logo centrado y título (que cambia de tamaño en pantallas pequeñas) -->
+    <div class="d-flex flex-column align-items-center mx-auto">
+      <img 
+        src="./img/Kebab-logo.webp" 
+        alt="kebap" 
+        class="img-fluid kebab" 
+        style="max-height: 100px;" 
+      />
+      <h1 class="text-center text-light mb-0" style="font-size: 1.5rem;">Kebap Amego</h1>
+    </div>
+
+    <!-- Menú de navegación -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">¿Por qué nosotros?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#whyUs">Sobre nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Productos & Opiniones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dónde estamos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!--Video de fondo-->
+
+ <div class="position-relative overflow-hidden">
+        <div class="d-flex  h-100" lc-helper="video-bg">
+            <video style="z-index:1;object-fit: cover; object-position: 50% 50%;" class="position-absolute w-100 min-vh-100" autoplay="" preload="" muted="" loop="" playsinline="">
+                <!-- adjust object-position to tweak cropping on mobile -->
+                <source src="media/kibap.mp4" type="video/mp4">
+            </video>
+            <div style="z-index:2" class="align-self-center text-center text-light col-md-8 offset-md-2">
+                <div class="lc-block mb-4">
+                    <div editable="rich">
+                        <h1 class="display-1 fw-bolder">With Love and Respect</h1>
+                    </div>
+                </div>
+
+                <div class="lc-block">
+                    <div editable="rich">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus porttitor dui.</p>
+
+                        <p class="lead">Sim in vestibulum metus pulvinar sit amet.
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="lc-block">
+                    <svg onclick="this.closest('section').nextElementSibling.scrollIntoView({ behavior: 'smooth'  });" width="4em" height="4em" viewBox="0 0 16 16" lc-helper="svg-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="">
+                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!--Good things-->
+<div class="container mt-0 mb-0 py-5">
+    <h2 class="text-center mb-5" id="whyUs">Los mejores kebabs</h2>
+    <div class="row text-center">
+        <!-- Frescura de Ingredientes -->
+        <div class="col-lg-3 col-sm-6 mb-4 py-3">
+            <div class="lc-block">
+                <h3 class="my-sm-3 mb-2">
+                    <i class="fas fa-seedling"></i>
+                    <span class="ms-2">Ingredientes Frescos</span>
+                </h3>
+                <div>
+                    <p>Utilizamos ingredientes frescos de alta calidad para garantizar el sabor auténtico en cada kebab.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Autenticidad de las Recetas -->
+        <div class="col-lg-3 col-sm-6 mb-4 py-3">
+            <div class="lc-block">
+                <h3 class="my-sm-3 mb-2">
+                    <i class="fas fa-utensils"></i>
+                    <span class="ms-2">Recetas Auténticas</span>
+                </h3>
+                <div>
+                    <p>Nuestras recetas se inspiran en la auténtica cocina del Medio Oriente, traídas a tu mesa con amor y tradición.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variedad en el Menú -->
+        <div class="col-lg-3 col-sm-6 mb-4 py-3">
+            <div class="lc-block">
+                <h3 class="my-sm-3 mb-2">
+                    <i class="fas fa-th-list"></i>
+                    <span class="ms-2">Variedad en el Menú</span>
+                </h3>
+                <div>
+                    <p>Desde kebabs clásicos hasta opciones vegetarianas, ofrecemos un menú que se adapta a todos los gustos.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Atención al Cliente -->
+        <div class="col-lg-3 col-sm-6 mb-4 py-3">
+            <div class="lc-block">
+                <h3 class="my-sm-3 mb-2">
+                    <i class="fas fa-heart"></i>
+                    <span class="ms-2">Atención al Cliente</span>
+                </h3>
+                <div>
+                    <p>Nos enorgullece brindar una experiencia cálida y personalizada a cada cliente que visita nuestro restaurante.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- About Us Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-5">Sobre Nosotros</h2>
+    <p class="text-center">Desde el corazón del Medio Oriente, traemos la auténtica experiencia de kebabs a nuestra comunidad. Nuestro restaurante es un lugar de encuentro para los amantes de la buena comida, la cultura y la hospitalidad. ¡Nos encanta servirte!</p>
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-5">Galería</h2>
+    <div class="row">
+      <div class="col-md-4"><img src="./img/kebab1.webp" class="img-fluid mb-4" alt="Kebab 1"></div>
+      <div class="col-md-4"><img src="./img/kebab2.webp" class="img-fluid mb-4" alt="Kebab 2"></div>
+      <div class="col-md-4"><img src="./img/kebab3.webp" class="img-fluid mb-4" alt="Kebab 3"></div>
+    </div>
+  </div>
+
+  <!-- Customer Reviews Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-5">Opiniones de Clientes</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p>¡El mejor kebab que he probado! Ingredientes frescos y un sabor auténtico.</p>
+          <footer class="blockquote-footer">Carlos R.</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p>Un lugar acogedor con un excelente servicio. ¡Altamente recomendado!</p>
+          <footer class="blockquote-footer">María G.</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p>Perfecto para una cena con amigos. Deliciosos kebabs y ambiente genial.</p>
+          <footer class="blockquote-footer">Ana S.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- Location and Contact Section -->
+  <div class="container my-5 text-center">
+    <h2 class="mb-4">Ubicación y Contacto</h2>
+    <p>Visítanos en Calle del Sabor, 123, Ciudad Kebabs, Tel: +34 123 456 789</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9121895436596!2d-122.08424968530699!3d37.42206597982686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbd4b1f6cbb11%3A0xf7396e7a4d8b9e9e!2sGoogleplex!5e0!3m2!1sen!2sus!4v1597981037491!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+
+  <!-- Opening Hours Section -->
+  <div class="container my-5 text-center">
+    <h2 class="mb-4">Horario de Apertura</h2>
+    <p>Lunes a Viernes: 12:00 PM - 11:00 PM</p>
+    <p>Sábado y Domingo: 1:00 PM - 12:00 AM</p>
+  </div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>Sobre Nosotros</h5>
+        <p>Disfruta del auténtico sabor del Medio Oriente. En nuestro restaurante, nos especializamos en kebabs frescos y sabrosos, hechos con ingredientes de la más alta calidad.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Enlaces Rápidos</h5>
+        <ul class="list-unstyled">
+          <li><a href="#about" class="text-light text-decoration-none">Sobre Nosotros</a></li>
+          <li><a href="#menu" class="text-light text-decoration-none">Menú</a></li>
+          <li><a href="#contact" class="text-light text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Síguenos</h5>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="text-light mx-2">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#" class="text-light mx-2">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#" class="text-light mx-2">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-3">
+      <p>&copy; 2024 Kebab Restaurant. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+<!-- End Footer -->
+
+
+      <!-- Bootstrap JavaScript bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
